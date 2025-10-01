@@ -7,7 +7,7 @@ Array.from(buttons).forEach((button) => {
       string = eval(string);
       document.querySelector("input").value = string;
       }
-      catch(erroe){
+      catch(error){
         document.querySelector("input").value = 'error';
       }
       
@@ -15,21 +15,21 @@ Array.from(buttons).forEach((button) => {
       try{string = "";
       document.querySelector("input").value = string;
       }
-      catch(erroe){
+      catch(error){
         document.querySelector("input").value = 'error';
       }
     } else if (e.target.innerHTML == "DEL") {
       try{string = string.slice(0, -1);
       document.querySelector("input").value = string;
       }
-      catch(erroe){
+      catch(error){
         document.querySelector("input").value = 'error';
       }
     } else if (e.target.innerHTML == "%") {
       try {
         string = (eval(string) / 100).toString();
-      } catch {
-        string = "Error";
+      } catch (erroe){
+        docment.quereySelector('input').value='erroe';
       }
       document.querySelector("input").value = string;
     } else {
@@ -38,3 +38,4 @@ Array.from(buttons).forEach((button) => {
     }
   });
 });
+
