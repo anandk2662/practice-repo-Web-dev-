@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo">
+          <div class="logo border"></div>
+        </div>
+        <div class="nav-address border">
+          <p id="add_1">Delivering to Bangaluru 560061</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="add_2">Update location</span>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <input
+              class="search-input"
+              placeholder="Search Amazon.in"
+              type="text"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </select>
+        </div>
+        <div class="nav-countrylogo border">
+          <div class="country-flag">
+            <img width="22" src="https://flagsapi.com/IN/flat/64.png" />
+          </div>
+          <p>EN</p>
+        </div>
+        <div class="nav-signin border">
+          <p class="nav-first"><span>Hello,sign in</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+        <div class="nav-signin border">
+          <p class="nav-first"><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+        <div class="cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>cart</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-all border">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+        <div class="panel-options">
+          <p class="border">Fresh</p>
+          <p class="border">MX Player</p>
+          <p class="border">Sell</p>
+          <p class="border">Bestsellers</p>
+          <p class="border">Today's Deals</p>
+          <p class="border">Mobiles</p>
+          <p class="border">New Releases</p>
+          <p class="border">Electronics</p>
+          <p class="border">Prime</p>
+          <p class="border">Customer Service</p>
+          <p class="border">Fashion</p>
+          <p class="border">Home & Kitchen</p>
+         </div>
+        <div class="GIF-img border"></div>
+      </div>
+      <div class="hero-section">
+        <div class="slider">
+          <div class="slides">
+            <img class="slide" src="img/amazon background.jpg" alt="">
+            <img class="slide" src="img/background img 2.jpg" alt="">
+            <img class="slide" src="img/background img 3.jpg" alt="">
+            <img class="slide" src="img/background img 4.jpg" alt="">
+            <img class="slide" src="img/background img 5.jpg" alt="">
+            <img class="slide" src="img/background img 6.png" alt="">
+            <img class="slide" src="img/background img 7.jpg" alt="">
+            <img class="slide" src="img/background img 8.jpg" alt="">
+          </div>
+          <div class="btn prev" onclick="prevSlide()"> < </div>
+          <div class="btn next" onclick="nextSlide()">></div>
+        </div>
+      </div>
+      
+      <div class="shop-section-row1">
+        <div class="box">
+          <div class="box-content">
+            <h2>Get Wholesale Pricing + <br>10% welcome bonus</h2>
+            <div class="multi-boxImg">
+              <img src="img/img01.jpg" alt="">
+              <img src="img/img02.jpg" alt="">
+              <img src="img/img03.jpg" alt="">
+              <img src="img/img04.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 70% off|<br> Truely wireless earbuds</h2>
+            <div class="box-img" style="background-image: url('img/img1.jpg');"></div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Shop by brand <br>Deals on top smartphones</h2>
+            <div class="multi-boxImg">
+              <img src="img/img10.jpg" alt="">
+              <img src="img/img11.jpg" alt="">
+              <img src="img/img12.jpg" alt="">
+              <img src="img/img13.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+            <h2>Up to 70% off| Truly<br> wireless earbuds</h2>
+            <div class="box-img" style="background-image: url('img/sponser.jpg');"></div>
+            <p>see all offers</p>
+          </div>
+          </div>
+      </div>
+      <div class="shop-section-row2">
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 80% off | Home, <br>kitchen & more</h2>
+            <div class="multi-boxImg">
+              <img src="img/img3.jpg" alt="">
+              <img src="img/img4.jpg" alt="">
+              <img src="img/img5.jpg" alt="">
+              <img src="img/img7.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 80% off | Electronics & <br> Accessories</h2>
+            <div class="box-img" style="background-image: url('img/img9.jpg');"></div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 65% off | Offers on home <br>appliances</h2>
+            <div class="multi-boxImg">
+              <img src="img/img14.jpg" alt="">
+              <img src="img/img15.jpg" alt="">
+              <img src="img/img16.jpg" alt="">
+              <img src="img/img17.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Starting ₹299 | Festive deals | <br>Amazon brands & more</h2>
+            <div class="multi-boxImg">
+              <img src="img/img22.jpg" alt="">
+              <img src="img/img23.jpg" alt="">
+              <img src="img/img24.jpg" alt="">
+              <img src="img/img26.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+      </div>
+      <div class="slideimg">
+    <h1 class="title">Top deals with exchange | Up to ₹74,000 off</h1>
+      <div class="imgSlider">
+        <div class="slideImgs">
+          <img class="card"  src="img/img27.jpg" alt="card">
+          <img class="card"  src="img/img28.jpg" alt="card">
+          <img class="card"  src="img/img29.jpg" alt="card">
+          <img class="card"  src="img/img30.jpg" alt="card">
+          <img class="card" src="img/img31.jpg" alt="card">
+          <img class="card" src="img/img32.jpg" alt="card">
+          <img class="card" src="img/img33.jpg" alt="card">
+          <img class="card" src="img/img34.jpg" alt="card">
+          <img class="card" src="img/img35.jpg" alt="card">
+          <img class="card" src="img/img36.jpg" alt="card">
+          <img class="card" src="img/img37.jpg" alt="card">
+          <img class="card" src="img/img38.jpg" alt="card">
+          <img class="card" src="img/img39.jpg" alt="card">
+          <img class="card" src="img/img40.jpg" alt="card">
+          <img class="card" src="img/img41.jpg" alt="card">
+          <img class="card" src="img/img42.jpg" alt="card">
+          <img class="card" src="img/img43.jpg" alt="card">
+        </div>
+      </div>
+
+      </div>
+        <div class="slideimg">
+    <h1 class="title">Flat 10% cashback* | Bestselling home & kitchen essentials from Amazon Launchpad</h1>
+      <div class="imgSlider">
+        <div class="slideImgs">
+          <img class="card"  src="img/1.jpg" alt="card">
+          <img class="card"  src="img/2.jpg" alt="card">
+          <img class="card"  src="img/3.jpg" alt="card">
+          <img class="card"  src="img/3.jpg" alt="card">
+          <img class="card" src="img/8.jpg" alt="card">
+          <img class="card" src="img/6.jpg" alt="card">
+          <img class="card" src="img/7.jpg" alt="card">
+          <img class="card" src="img/8.jpg" alt="card">
+          <img class="card" src="img/9.jpg" alt="card">
+          <img class="card" src="img/10.jpg" alt="card">
+          <img class="card" src="img/11.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+        </div>
+      </div>
+      
+      </div>
+      <div class="shop-section">
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 75% off | Collections <br>from Small businesses</h2>
+            <div class="multi-boxImg">
+              <img src="img/img116.jpg" alt="">
+              <img src="img/img117.jpg" alt="">
+              <img src="img/img118.jpg" alt="">
+              <img src="img/img119.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+       <div class="box">
+          <div class="box-content">
+            <h2>Up to 80% off | Amazon brands <br>& more</h2>
+            <div class="multi-boxImg">
+              <img src="img/img137.jpg" alt="">
+              <img src="img/img138.jpg" alt="">
+              <img src="img/img139.jpg" alt="">
+              <img src="img/img140.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to ₹26,000 off | Top brands <br>from stores nearby </h2>
+            <div class="multi-boxImg">
+              <img src="img/img141.jpg" alt="">
+              <img src="img/img142.jpg" alt="">
+              <img src="img/img143.jpg" alt="">
+              <img src="img/img144.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 70% Off | Empowering Women-led brands</h2>
+            <div class="multi-boxImg">
+              <img src="img/img120.jpg" alt="">
+              <img src="img/img121.jpg" alt="">
+              <img src="img/img122.jpg" alt="">
+              <img src="img/img123.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+      </div>
+        <div class="slideimg">
+    <h1 class="title">Up to 40% off | Best Deals on flagship smartphones</h1>
+      <div class="imgSlider">
+        <div class="slideImgs">
+          <img class="card"  src="img/img49.jpg" alt="card">
+          <img class="card"  src="img/img50.jpg" alt="card">
+          <img class="card"  src="img/img51.jpg" alt="card">
+          <img class="card"  src="img/img52.jpg" alt="card">
+          <img class="card" src="img/img53.jpg" alt="card">
+          <img class="card" src="img/img54.jpg" alt="card">
+          <img class="card" src="img/img55.jpg" alt="card">
+          <img class="card" src="img/img56.jpg" alt="card">
+          <img class="card" src="img/img57.jpg" alt="card">
+          <img class="card" src="img/img58.jpg" alt="card">
+          <img class="card" src="img/img59.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+        </div>
+      </div>
+      
+      </div>
+        <div class="slideimg">
+    <h1 class="title">Up to 65% off | Deals on Smart TVs</h1>
+      <div class="imgSlider">
+        <div class="slideImgs">
+          <img class="card"  src="img/img60.jpg" alt="card">
+          <img class="card"  src="img/img61.jpg" alt="card">
+          <img class="card"  src="img/img62.jpg" alt="card">
+          <img class="card"  src="img/img63.jpg" alt="card">
+          <img class="card" src="img/img64.jpg" alt="card">
+          <img class="card" src="img/img65.jpg" alt="card">
+          <img class="card" src="img/img66.jpg" alt="card">
+          <img class="card" src="img/img67.jpg" alt="card">
+          <img class="card" src="img/img68.jpg" alt="card">
+          <img class="card" src="img/img69.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+        </div>
+      </div>
+      
+      </div>
+      
+      <div class="shop-section">
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 70% off | Top categories from Small Businesses</h2>
+            <div class="multi-boxImg">
+              <img src="img/img124.jpg" alt="">
+              <img src="img/img125.jpg" alt="">
+              <img src="img/img126.jpg" alt="">
+              <img src="img/img127.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+       <div class="box">
+          <div class="box-content">
+            <h2>Up to 80% off | Treasures from Indian artisans</h2>
+            <div class="multi-boxImg">
+              <img src="img/img79.jpg" alt="">
+              <img src="img/img80.jpg" alt="">
+              <img src="img/img81.jpg" alt="">
+              <img src="img/img82.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 70% off | Home & kitchen essentials from...</h2>
+            <div class="multi-boxImg">
+              <img src="img/img145.jpg" alt="">
+              <img src="img/img146.jpg" alt="">
+              <img src="img/img147.jpg" alt="">
+              <img src="img/img148.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 45% off | Samsung smartphones</h2>
+            <div class="box-img" style="background-image: url('img/img83.jpg');"></div>
+            <p>see all offers</p>
+          </div>
+        </div>
+      </div>
+        <div class="slideimg">
+    <h1 class="title">Top deals with exchange | Up to ₹74,000 off</h1>
+      <div class="imgSlider">
+        <div class="slideImgs">
+          <img class="card"  src="img/img75.jpg" alt="card">
+          <img class="card"  src="img/img76.jpg" alt="card">
+          <img class="card"  src="img/img77.jpg" alt="card">
+          <img class="card"  src="img/img78.jpg" alt="card">
+          <img class="card" src="img/img79.jpg" alt="card">
+          <img class="card" src="img/img78.jpg" alt="card">
+          <img class="card" src="img/img79.jpg" alt="card">
+          <img class="card" src="img/img80.jpg" alt="card">
+          <img class="card" src="img/img84.jpg" alt="card">
+          <img class="card" src="img/img85.jpg" alt="card">
+          <img class="card" src="img/img95.jpg" alt="card">
+          <img class="card" src="img/img99.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+          <img class="card" src="img/img29.jpg" alt="card">
+        </div>
+      </div>
+      
+      </div>
+      <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+            <h2>Up to 70% off | Amazon <br>Renewed</h2>
+            <div class="box-img" style="background-image: url('img/img149.jpg');"></div>
+            <p>see all offers</p>
+          </div>
+          </div>
+        
+        <div class="box">
+          <div class="box-content">
+            <h2>Up to 70% off | International brands</h2>
+            <div class="box-img" style="background-image: url('img/img150.jpg');"></div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Deals on outdoor toys</h2>
+            <div class="multi-boxImg">
+              <img src="img/img70.jpg" alt="">
+              <img src="img/img71.jpg" alt="">
+              <img src="img/img72.jpg" alt="">
+              <img src="img/img74.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <h2>Collection from Small & medium businesses</h2>
+            <div class="multi-boxImg">
+              <img src="img/img151.jpg" alt="">
+              <img src="img/img152.jpg" alt="">
+              <img src="img/img153.jpg" alt="">
+              <img src="img/img154.jpg" alt="">
+            </div>
+            <p>see all offers</p>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+    <footer>
+      <div class="foot-panel1">
+        Back to top
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to know us</p>
+          <a>About Amazon</a>
+          <a>Careers</a>
+          <a>Press Releases</a>
+          <a>Amazon Science</a>
+        </ul>
+        <ul>
+          <p>Connect with Us</p>
+          <a>Facebook</a>
+          <a>Twitter</a>
+          <a>Instagram</a>
+        </ul>
+        <ul>
+          <p>Make Money with Us</p>
+          <a>Sell on Amazon</a>
+          <a>Sell under Amazon Accelerator</a>
+          <a>Protect and Build Your Brand</a>
+          <a>Amazon Global Selling</a>
+          <a>Supply to Amazon</a>
+          <a>Become an Affiliate</a>
+          <a>Fulfilment by Amazon</a>
+          <a>Advertise Your Products</a>
+          <a>Amazon Pay on Merchants</a>
+          </ul>
+        <ul>
+          <p>Let Us Help You</p>
+          <a>Your Account</a>
+          <a>Returns Centre</a>
+          <a>Recalls and Product Safety Alerts</a>
+          <a>100% Purchase Protection</a>
+          <a>Amazon App Download</a>>
+          <a>Help</a> 
+          </ul>
+      </div>
+      <div class="foot-panel3">
+        <div class="logo">
+
+        </div>
+      </div>
+      <div class="foot-panel4">
+        <div class="pages">
+          <a>Condition of Use</a>
+          <a>Privacy Notice</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2025, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
