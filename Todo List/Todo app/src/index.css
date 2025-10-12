@@ -1,0 +1,7 @@
+@import "tailwindcss";
+body{
+  background-image: url('img/v722-aum-31b.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
